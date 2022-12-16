@@ -1,20 +1,3 @@
-/**
-* This method is like `defaultTo` except that it accepts multiple default values and returns the first one that is not
-* `NaN`, `null`, or `undefined`.
-*
-* defaultToAny(1, 10, 20)
-* // => 1
-*
-* defaultToAny(undefined, 10, 20)
-* // => 10
-*
-* defaultToAny(undefined, null, 20)
-* // => 20
-*
-* defaultToAny(undefined, null, NaN)
-* // => NaN
-*/
-
 import assert from 'assert'
 import defaulToAny from '../src/defaultToAny.js';
 
@@ -30,5 +13,8 @@ describe('the defaulToAny function', function(){
     });
     it('should return the last value if all values in the array are default values', function(){
         assert.equal(defaulToAny(undefined, null, NaN),NaN)
+    });
+    it('should return the first value which is 1 even if there is an undefined value further back', function(){
+        assert.equal(defaulToAny(1,10,undefined,20),1)
     });
 });
