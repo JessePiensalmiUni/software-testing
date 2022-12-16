@@ -3,7 +3,7 @@
 import assert from 'assert'
 import every from '../src/every.js';
 
-describe('CamelCaseTest', function(){
+describe('EveryTest', function(){
     it('Should return false when null value in the list as its not truthy', function(){
         var result = every([true, 1, null, 'yes'], Boolean)
         assert.equal(result, false);
