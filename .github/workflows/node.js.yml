@@ -25,7 +25,6 @@ jobs:
               run: npm test
               
     finish:
-        needs: test
         runs-on: ubuntu-latest
         steps:
             - name: "Coveralls"
