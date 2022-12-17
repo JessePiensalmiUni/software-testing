@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "test-with-coverage": "nyc --reporter=text mocha"
+    "test-with-coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": "",
   "license": "MIT",
