@@ -2,7 +2,7 @@
 import assert from 'assert'
 import CamelCase from '../src/camelCase.js';
 
-describe('CamelCaseTest', function(){
+describe('CamelCase', function(){
     it('Should remove all spaces and lowercase first letter and uppercase letters after a separator', function(){
         var result = CamelCase('Foo Bar')
         assert.equal(result, 'fooBar');

@@ -11,9 +11,9 @@ describe('chunk', function(){
         let result = chunk(['a', 'b', 'c', 'd'], 3)
         assert.deepEqual(result, [['a', 'b', 'c'], ['d']]);
     });
-    it('Should be same array when size is  len of arr', function(){
+    it('Should be same array inside of another array when size is  len of arr', function(){
         let result = chunk(['a', 'b', 'c', 'd'], 4)
-        assert.dppequal(result, obj1);
+        assert.deepEqual(result, [['a', 'b', 'c', 'd']]);
     });
     it('Should be every elem in its owwn array when size is 1', function(){
         let result = chunk(['a', 'b', 'c', 'd'], 1)
