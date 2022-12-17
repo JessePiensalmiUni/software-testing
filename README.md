@@ -1,4 +1,4 @@
-# Student template
+# Student template [![Coverage Status](https://coveralls.io/repos/github/JessePiensalmiUni/software-testing/badge.svg?branch=main)](https://coveralls.io/github/JessePiensalmiUni/software-testing?branch=main)
 
 ## Purpose of this repository
 
