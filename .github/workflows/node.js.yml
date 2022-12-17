@@ -22,8 +22,10 @@ jobs:
             - name: "Run Test"
               run: npm test
             - name: "Coverage"
+              if: always()
               run: npm run test-with-coverage
             - name: Coveralls
+              if: always()
               uses: coverallsapp/github-action@master
               with:
                 github-token: ${{ secrets.GITHUB_TOKEN }}
