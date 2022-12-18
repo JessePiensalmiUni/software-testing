@@ -21,6 +21,18 @@ const cars= [
     {'chevrolet': 'stallion', 'year': '2002', 'type':'car'},
     {'volvo': 'compact', 'year':'2015','type': 'car'}
 ]
+const weird= [
+    {'what':"the","type":undefined},
+    {'who':"is",'type':null},
+    {'what':'no','type':0}
+]
+const zero=[
+    {undefined:undefined,undefined:undefined},
+    {undefined:undefined,undefined:0}
+]
+const empty=[
+
+]
 
 describe('the countBy function', function(){
     it('should return a map of true and false where the value for true is 1 and false is 0', function(){
@@ -37,5 +49,17 @@ describe('the countBy function', function(){
     });
     it('should return a map of car that has value 3', function(){
         assert.deepEqual(countBy(cars,value => value.type),{'car':3})
+    });
+    it('should return a map of the that has value 1', function(){
+        assert.deepEqual(countBy(weird,value => value.what),{'the':1})
+    });
+    it('should return a map of {undefined:1,null:1,0:1} that have value 1', function(){
+        assert.deepEqual(countBy(weird,value => value.type),{undefined:1,null:1,0:1})
+    });
+    it('should return a map of {undefined:0,0:0} that have value 1', function(){
+        assert.deepEqual(countBy(zero,value => value.undefined),{undefined:0,0:0})
+    });
+    it("should return {} when given an empty array and a value that doesn't exist in the variable",function(){
+        assert.deepEqual(countBy(empty,value => value.type),{})
     });
 })

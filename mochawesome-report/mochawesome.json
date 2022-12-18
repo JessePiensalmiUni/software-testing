@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 10,
-    "tests": 48,
-    "passes": 31,
+    "tests": 56,
+    "passes": 37,
     "pending": 0,
-    "failures": 17,
-    "start": "2022-12-17T17:55:57.024Z",
-    "end": "2022-12-17T17:55:57.048Z",
-    "duration": 24,
-    "testsRegistered": 48,
-    "passPercent": 64.58333333333334,
+    "failures": 19,
+    "start": "2022-12-18T16:19:29.916Z",
+    "end": "2022-12-18T16:19:29.960Z",
+    "duration": 44,
+    "testsRegistered": 56,
+    "passPercent": 66.07142857142857,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "2937f77b-2706-470d-be78-465b5da25d83",
+      "uuid": "184d7997-55d7-4837-8f62-d67f33316ecb",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,9 +27,9 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "62655390-1ff5-4881-b75f-f4f5d8c2477e",
+          "uuid": "3eb31ac7-180b-4f8e-bdcd-a290110496c5",
           "title": "CamelCase",
-          "fullFile": "C:\\Users\\609\\Documents\\Testing\\software-testing\\test\\camelcase.test.js",
+          "fullFile": "F:\\Software_testing_course\\software-testing\\test\\camelcase.test.js",
           "file": "\\test\\camelcase.test.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -48,11 +48,11 @@
               "code": "var result = CamelCase('Foo Bar')\nassert.equal(result, 'fooBar');",
               "err": {
                 "message": "AssertionError: ' fooBar' == 'fooBar'",
-                "estack": "AssertionError [ERR_ASSERTION]: ' fooBar' == 'fooBar'\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/camelcase.test.js:8:16)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "AssertionError [ERR_ASSERTION]: ' fooBar' == 'fooBar'\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/camelcase.test.js:8:16)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": "-  fooBar\n+ fooBar\n"
               },
-              "uuid": "dc2a99cc-8ccc-4e24-b676-167838b53260",
-              "parentUUID": "62655390-1ff5-4881-b75f-f4f5d8c2477e",
+              "uuid": "bf552d1b-bcc2-4d83-88e9-44f735e70963",
+              "parentUUID": "3eb31ac7-180b-4f8e-bdcd-a290110496c5",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +60,7 @@
               "title": "Should remove all \"-\" signs and lowercase first letter and uppercase after a separator",
               "fullTitle": "CamelCase Should remove all \"-\" signs and lowercase first letter and uppercase after a separator",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -70,11 +70,11 @@
               "code": "var result = CamelCase('--foo-bar--')\nassert.equal(result, 'fooBar');",
               "err": {
                 "message": "AssertionError: ' fooBar' == 'fooBar'",
-                "estack": "AssertionError [ERR_ASSERTION]: ' fooBar' == 'fooBar'\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/camelcase.test.js:12:16)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "AssertionError [ERR_ASSERTION]: ' fooBar' == 'fooBar'\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/camelcase.test.js:12:16)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": "-  fooBar\n+ fooBar\n"
               },
-              "uuid": "d30a1a9e-ffa1-451f-89e3-2f01b3c205f0",
-              "parentUUID": "62655390-1ff5-4881-b75f-f4f5d8c2477e",
+              "uuid": "1eaec858-2f1b-4499-921a-c68f2bfe7c7b",
+              "parentUUID": "3eb31ac7-180b-4f8e-bdcd-a290110496c5",
               "isHook": false,
               "skipped": false
             },
@@ -92,11 +92,11 @@
               "code": "var result = CamelCase('__FOO_BAR__')\nassert.equal(result, 'fooBar');",
               "err": {
                 "message": "AssertionError: ' fooBar' == 'fooBar'",
-                "estack": "AssertionError [ERR_ASSERTION]: ' fooBar' == 'fooBar'\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/camelcase.test.js:16:16)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "AssertionError [ERR_ASSERTION]: ' fooBar' == 'fooBar'\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/camelcase.test.js:16:16)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": "-  fooBar\n+ fooBar\n"
               },
-              "uuid": "e2d647fb-3794-484a-82e9-a3ba41324135",
-              "parentUUID": "62655390-1ff5-4881-b75f-f4f5d8c2477e",
+              "uuid": "7cd9d57d-2b9f-4252-b853-371e6aef3abe",
+              "parentUUID": "3eb31ac7-180b-4f8e-bdcd-a290110496c5",
               "isHook": false,
               "skipped": false
             },
@@ -114,11 +114,11 @@
               "code": "var result = CamelCase('')\nassert.equal(result, '');",
               "err": {
                 "message": "AssertionError: ' ' == ''",
-                "estack": "AssertionError [ERR_ASSERTION]: ' ' == ''\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/camelcase.test.js:20:16)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "AssertionError [ERR_ASSERTION]: ' ' == ''\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/camelcase.test.js:20:16)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": "-  \n"
               },
-              "uuid": "d5115506-e6d4-49d5-9d37-7c98725daaee",
-              "parentUUID": "62655390-1ff5-4881-b75f-f4f5d8c2477e",
+              "uuid": "ae7cc791-a629-447c-9eb3-ecbd4add218a",
+              "parentUUID": "3eb31ac7-180b-4f8e-bdcd-a290110496c5",
               "isHook": false,
               "skipped": false
             },
@@ -136,11 +136,11 @@
               "code": "var result = CamelCase('Word')\nassert.equal(result, 'word');",
               "err": {
                 "message": "AssertionError: ' word' == 'word'",
-                "estack": "AssertionError [ERR_ASSERTION]: ' word' == 'word'\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/camelcase.test.js:24:16)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "AssertionError [ERR_ASSERTION]: ' word' == 'word'\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/camelcase.test.js:24:16)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": "-  word\n+ word\n"
               },
-              "uuid": "6b0ed20e-acb7-40d8-8519-ab5a4f45847c",
-              "parentUUID": "62655390-1ff5-4881-b75f-f4f5d8c2477e",
+              "uuid": "77ddaada-9dcc-41bf-a9c9-72e705b02ddb",
+              "parentUUID": "3eb31ac7-180b-4f8e-bdcd-a290110496c5",
               "isHook": false,
               "skipped": false
             },
@@ -158,11 +158,11 @@
               "code": "var result = CamelCase('Word   Test   one   two ----  three')\nassert.equal(result, 'wordTestOneTwoThree');",
               "err": {
                 "message": "AssertionError: ' wordTestOneTwoThree' == 'wordTestOneTwoThree'",
-                "estack": "AssertionError [ERR_ASSERTION]: ' wordTestOneTwoThree' == 'wordTestOneTwoThree'\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/camelcase.test.js:28:16)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "AssertionError [ERR_ASSERTION]: ' wordTestOneTwoThree' == 'wordTestOneTwoThree'\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/camelcase.test.js:28:16)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": "-  wordTestOneTwoThree\n+ wordTestOneTwoThree\n"
               },
-              "uuid": "3a4e4d67-ea4f-4b51-aa6a-a832d696ad86",
-              "parentUUID": "62655390-1ff5-4881-b75f-f4f5d8c2477e",
+              "uuid": "35660108-90a0-4f63-824a-347bbebd631c",
+              "parentUUID": "3eb31ac7-180b-4f8e-bdcd-a290110496c5",
               "isHook": false,
               "skipped": false
             }
@@ -170,24 +170,24 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "dc2a99cc-8ccc-4e24-b676-167838b53260",
-            "d30a1a9e-ffa1-451f-89e3-2f01b3c205f0",
-            "e2d647fb-3794-484a-82e9-a3ba41324135",
-            "d5115506-e6d4-49d5-9d37-7c98725daaee",
-            "6b0ed20e-acb7-40d8-8519-ab5a4f45847c",
-            "3a4e4d67-ea4f-4b51-aa6a-a832d696ad86"
+            "bf552d1b-bcc2-4d83-88e9-44f735e70963",
+            "1eaec858-2f1b-4499-921a-c68f2bfe7c7b",
+            "7cd9d57d-2b9f-4252-b853-371e6aef3abe",
+            "ae7cc791-a629-447c-9eb3-ecbd4add218a",
+            "77ddaada-9dcc-41bf-a9c9-72e705b02ddb",
+            "35660108-90a0-4f63-824a-347bbebd631c"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 3,
+          "duration": 2,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "8c064382-1a0c-46e2-8668-044a14c66285",
+          "uuid": "c9623741-df74-44f4-a573-42cdc8dd25a1",
           "title": "castArray",
-          "fullFile": "C:\\Users\\609\\Documents\\Testing\\software-testing\\test\\castArray.test.js",
+          "fullFile": "F:\\Software_testing_course\\software-testing\\test\\castArray.test.js",
           "file": "\\test\\castArray.test.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -196,7 +196,7 @@
               "title": "Num 1 should be only element in array as num 1",
               "fullTitle": "castArray Num 1 should be only element in array as num 1",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -205,8 +205,8 @@
               "context": null,
               "code": "assert.deepEqual(castArray(1), [1]);",
               "err": {},
-              "uuid": "ccbf1b34-2a18-4fce-a51d-7c9447f7113f",
-              "parentUUID": "8c064382-1a0c-46e2-8668-044a14c66285",
+              "uuid": "b3c35642-b85c-4a0e-a950-057c2f0c752c",
+              "parentUUID": "c9623741-df74-44f4-a573-42cdc8dd25a1",
               "isHook": false,
               "skipped": false
             },
@@ -223,8 +223,8 @@
               "context": null,
               "code": "var result = castArray({ 'a': 1 })\nassert.deepEqual(result, [{ 'a': 1 }]);",
               "err": {},
-              "uuid": "a5529f38-7c4b-4ac1-9c83-999c36772d21",
-              "parentUUID": "8c064382-1a0c-46e2-8668-044a14c66285",
+              "uuid": "5bd02375-5373-46b2-856a-aaa84f053976",
+              "parentUUID": "c9623741-df74-44f4-a573-42cdc8dd25a1",
               "isHook": false,
               "skipped": false
             },
@@ -241,8 +241,8 @@
               "context": null,
               "code": "var result = castArray('abc')\nassert.deepEqual(result, ['abc']);",
               "err": {},
-              "uuid": "80edde2f-8179-4800-a3b7-fb33384b4482",
-              "parentUUID": "8c064382-1a0c-46e2-8668-044a14c66285",
+              "uuid": "c52237ca-528e-4264-a61f-5993b5a1dc1a",
+              "parentUUID": "c9623741-df74-44f4-a573-42cdc8dd25a1",
               "isHook": false,
               "skipped": false
             },
@@ -259,8 +259,8 @@
               "context": null,
               "code": "var result = castArray(null)\nassert.deepEqual(result, [null]);",
               "err": {},
-              "uuid": "2093ee89-4d58-4660-abc4-5b3dae33457e",
-              "parentUUID": "8c064382-1a0c-46e2-8668-044a14c66285",
+              "uuid": "7336865e-aea4-42e2-8665-b0ea1c79c199",
+              "parentUUID": "c9623741-df74-44f4-a573-42cdc8dd25a1",
               "isHook": false,
               "skipped": false
             },
@@ -277,8 +277,8 @@
               "context": null,
               "code": "var result = castArray(undefined)\nassert.deepEqual(result, [undefined]);",
               "err": {},
-              "uuid": "30f216a3-b300-436a-8df9-3d4a86a6751e",
-              "parentUUID": "8c064382-1a0c-46e2-8668-044a14c66285",
+              "uuid": "a2ec83ba-b017-46db-913f-947d2d519119",
+              "parentUUID": "c9623741-df74-44f4-a573-42cdc8dd25a1",
               "isHook": false,
               "skipped": false
             },
@@ -295,33 +295,33 @@
               "context": null,
               "code": "var result = castArray([1, 2, 3])\nassert.deepEqual(result, [1, 2, 3]);",
               "err": {},
-              "uuid": "453c4c69-fdac-4ded-b1a4-d7c1edc9ccbc",
-              "parentUUID": "8c064382-1a0c-46e2-8668-044a14c66285",
+              "uuid": "29113ab6-1f16-4fb9-88fa-1d5750bbdf10",
+              "parentUUID": "c9623741-df74-44f4-a573-42cdc8dd25a1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ccbf1b34-2a18-4fce-a51d-7c9447f7113f",
-            "a5529f38-7c4b-4ac1-9c83-999c36772d21",
-            "80edde2f-8179-4800-a3b7-fb33384b4482",
-            "2093ee89-4d58-4660-abc4-5b3dae33457e",
-            "30f216a3-b300-436a-8df9-3d4a86a6751e",
-            "453c4c69-fdac-4ded-b1a4-d7c1edc9ccbc"
+            "b3c35642-b85c-4a0e-a950-057c2f0c752c",
+            "5bd02375-5373-46b2-856a-aaa84f053976",
+            "c52237ca-528e-4264-a61f-5993b5a1dc1a",
+            "7336865e-aea4-42e2-8665-b0ea1c79c199",
+            "a2ec83ba-b017-46db-913f-947d2d519119",
+            "29113ab6-1f16-4fb9-88fa-1d5750bbdf10"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "aec5ea9f-f7d2-4101-b86f-7ecaae6f5e0f",
+          "uuid": "ef7f81c1-7cbb-44fe-87d5-06fc11cc3cde",
           "title": "chunk",
-          "fullFile": "C:\\Users\\609\\Documents\\Testing\\software-testing\\test\\chunk.test.js",
+          "fullFile": "F:\\Software_testing_course\\software-testing\\test\\chunk.test.js",
           "file": "\\test\\chunk.test.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -330,7 +330,7 @@
               "title": "Should split array to 2 + 2 arrays when size is 2",
               "fullTitle": "chunk Should split array to 2 + 2 arrays when size is 2",
               "timedOut": false,
-              "duration": 1,
+              "duration": 2,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -340,11 +340,11 @@
               "code": "let result = chunk(['a', 'b', 'c', 'd'], 2)\nassert.deepEqual(result, [['a', 'b'], ['c', 'd']]);",
               "err": {
                 "message": "AssertionError: Expected values to be loosely deep-equal:\n\n[\n  [\n    'c',\n    'd'\n  ],\n  <1 empty item>\n]\n\nshould loosely deep-equal\n\n[\n  [\n    'a',\n    'b'\n  ],\n  [\n    'c',\n    'd'\n  ]\n]",
-                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n[\n  [\n    'c',\n    'd'\n  ],\n  <1 empty item>\n]\n\nshould loosely deep-equal\n\n[\n  [\n    'a',\n    'b'\n  ],\n  [\n    'c',\n    'd'\n  ]\n]\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/chunk.test.js:8:16)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n[\n  [\n    'c',\n    'd'\n  ],\n  <1 empty item>\n]\n\nshould loosely deep-equal\n\n[\n  [\n    'a',\n    'b'\n  ],\n  [\n    'c',\n    'd'\n  ]\n]\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/chunk.test.js:8:16)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": " [\n   [\n+     \"a\"\n+     \"b\"\n+   ]\n+   [\n     \"c\"\n     \"d\"\n   ]\n ]\n"
               },
-              "uuid": "0198136c-e46f-4cfd-bf18-3af4c1a9c294",
-              "parentUUID": "aec5ea9f-f7d2-4101-b86f-7ecaae6f5e0f",
+              "uuid": "530eaf0c-75d7-42c4-80a3-301a62f2d019",
+              "parentUUID": "ef7f81c1-7cbb-44fe-87d5-06fc11cc3cde",
               "isHook": false,
               "skipped": false
             },
@@ -362,11 +362,11 @@
               "code": "let result = chunk(['a', 'b', 'c', 'd'], 3)\nassert.deepEqual(result, [['a', 'b', 'c'], ['d']]);",
               "err": {
                 "message": "AssertionError: Expected values to be loosely deep-equal:\n\n[\n  [\n    'd',\n    undefined,\n    undefined\n  ],\n  <1 empty item>\n]\n\nshould loosely deep-equal\n\n[\n  [\n    'a',\n    'b',\n    'c'\n  ],\n  [\n    'd'\n  ]\n]",
-                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n[\n  [\n    'd',\n    undefined,\n    undefined\n  ],\n  <1 empty item>\n]\n\nshould loosely deep-equal\n\n[\n  [\n    'a',\n    'b',\n    'c'\n  ],\n  [\n    'd'\n  ]\n]\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/chunk.test.js:12:16)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n[\n  [\n    'd',\n    undefined,\n    undefined\n  ],\n  <1 empty item>\n]\n\nshould loosely deep-equal\n\n[\n  [\n    'a',\n    'b',\n    'c'\n  ],\n  [\n    'd'\n  ]\n]\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/chunk.test.js:12:16)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": " [\n   [\n+     \"a\"\n+     \"b\"\n+     \"c\"\n+   ]\n+   [\n     \"d\"\n-     [undefined]\n-     [undefined]\n   ]\n ]\n"
               },
-              "uuid": "b3b3390f-4ed7-412a-ad6c-33e440dc1d1f",
-              "parentUUID": "aec5ea9f-f7d2-4101-b86f-7ecaae6f5e0f",
+              "uuid": "4c700de2-6063-477a-81df-e815367d81cc",
+              "parentUUID": "ef7f81c1-7cbb-44fe-87d5-06fc11cc3cde",
               "isHook": false,
               "skipped": false
             },
@@ -383,8 +383,8 @@
               "context": null,
               "code": "let result = chunk(['a', 'b', 'c', 'd'], 4)\nassert.deepEqual(result, [['a', 'b', 'c', 'd']]);",
               "err": {},
-              "uuid": "a5e28b8e-e350-45f0-a99f-6a1c7e91a50c",
-              "parentUUID": "aec5ea9f-f7d2-4101-b86f-7ecaae6f5e0f",
+              "uuid": "eb6370e3-d76b-40c1-92ac-9096e39b42ec",
+              "parentUUID": "ef7f81c1-7cbb-44fe-87d5-06fc11cc3cde",
               "isHook": false,
               "skipped": false
             },
@@ -392,7 +392,7 @@
               "title": "Should be every elem in its owwn array when size is 1",
               "fullTitle": "chunk Should be every elem in its owwn array when size is 1",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -402,11 +402,11 @@
               "code": "let result = chunk(['a', 'b', 'c', 'd'], 1)\nassert.deepEqual(result, [['a'], ['b'], ['c'], ['d']]);",
               "err": {
                 "message": "AssertionError: Expected values to be loosely deep-equal:\n\n[\n  [\n    'd'\n  ],\n  <3 empty items>\n]\n\nshould loosely deep-equal\n\n[\n  [\n    'a'\n  ],\n  [\n    'b'\n  ],\n  [\n    'c'\n  ],\n  [\n    'd'\n  ]\n]",
-                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n[\n  [\n    'd'\n  ],\n  <3 empty items>\n]\n\nshould loosely deep-equal\n\n[\n  [\n    'a'\n  ],\n  [\n    'b'\n  ],\n  [\n    'c'\n  ],\n  [\n    'd'\n  ]\n]\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/chunk.test.js:20:16)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n[\n  [\n    'd'\n  ],\n  <3 empty items>\n]\n\nshould loosely deep-equal\n\n[\n  [\n    'a'\n  ],\n  [\n    'b'\n  ],\n  [\n    'c'\n  ],\n  [\n    'd'\n  ]\n]\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/chunk.test.js:20:16)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": " [\n   [\n+     \"a\"\n+   ]\n+   [\n+     \"b\"\n+   ]\n+   [\n+     \"c\"\n+   ]\n+   [\n     \"d\"\n   ]\n ]\n"
               },
-              "uuid": "4617c6a7-b85e-4602-a7c4-d26fabf5e27d",
-              "parentUUID": "aec5ea9f-f7d2-4101-b86f-7ecaae6f5e0f",
+              "uuid": "bf199f2f-f587-4363-8255-4c0564bb61ca",
+              "parentUUID": "ef7f81c1-7cbb-44fe-87d5-06fc11cc3cde",
               "isHook": false,
               "skipped": false
             },
@@ -423,33 +423,33 @@
               "context": null,
               "code": "let result = chunk(['a', 'b', 'c', 'd'], 0)\nassert.deepEqual(result, []);",
               "err": {},
-              "uuid": "8ab320cb-6ce0-4b41-ac29-de1a2a17247e",
-              "parentUUID": "aec5ea9f-f7d2-4101-b86f-7ecaae6f5e0f",
+              "uuid": "ec493d25-6e54-4de6-85fd-34eb2e78b834",
+              "parentUUID": "ef7f81c1-7cbb-44fe-87d5-06fc11cc3cde",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a5e28b8e-e350-45f0-a99f-6a1c7e91a50c",
-            "8ab320cb-6ce0-4b41-ac29-de1a2a17247e"
+            "eb6370e3-d76b-40c1-92ac-9096e39b42ec",
+            "ec493d25-6e54-4de6-85fd-34eb2e78b834"
           ],
           "failures": [
-            "0198136c-e46f-4cfd-bf18-3af4c1a9c294",
-            "b3b3390f-4ed7-412a-ad6c-33e440dc1d1f",
-            "4617c6a7-b85e-4602-a7c4-d26fabf5e27d"
+            "530eaf0c-75d7-42c4-80a3-301a62f2d019",
+            "4c700de2-6063-477a-81df-e815367d81cc",
+            "bf199f2f-f587-4363-8255-4c0564bb61ca"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 1,
+          "duration": 3,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "e19baac5-bd10-462e-b119-6ef5a60b2f30",
+          "uuid": "eacb93d7-62d4-46e4-8823-a983b9077a6d",
           "title": "compact",
-          "fullFile": "C:\\Users\\609\\Documents\\Testing\\software-testing\\test\\compact.test.js",
+          "fullFile": "F:\\Software_testing_course\\software-testing\\test\\compact.test.js",
           "file": "\\test\\compact.test.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -467,8 +467,8 @@
               "context": null,
               "code": "assert.deepEqual(compact([]), []);",
               "err": {},
-              "uuid": "e688af60-a2bd-445e-80d4-5db27f2d7177",
-              "parentUUID": "e19baac5-bd10-462e-b119-6ef5a60b2f30",
+              "uuid": "ce5b3ade-619d-4c7a-ae55-f1a2ee71c6cd",
+              "parentUUID": "eacb93d7-62d4-46e4-8823-a983b9077a6d",
               "isHook": false,
               "skipped": false
             },
@@ -486,11 +486,11 @@
               "code": "assert.deepEqual(compact([1, 2, 3]), [1, 2, 3]);",
               "err": {
                 "message": "AssertionError: Expected values to be loosely deep-equal:\n\n[\n  2,\n  3,\n  '-1': 1\n]\n\nshould loosely deep-equal\n\n[\n  1,\n  2,\n  3\n]",
-                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n[\n  2,\n  3,\n  '-1': 1\n]\n\nshould loosely deep-equal\n\n[\n  1,\n  2,\n  3\n]\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/compact.test.js:9:16)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n[\n  2,\n  3,\n  '-1': 1\n]\n\nshould loosely deep-equal\n\n[\n  1,\n  2,\n  3\n]\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/compact.test.js:9:16)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": " [\n+   1\n   2\n   3\n ]\n"
               },
-              "uuid": "b7a198b4-e87f-46b2-8376-d11ee01c895b",
-              "parentUUID": "e19baac5-bd10-462e-b119-6ef5a60b2f30",
+              "uuid": "b5c91461-5f3d-446a-b305-642d6ae95c56",
+              "parentUUID": "eacb93d7-62d4-46e4-8823-a983b9077a6d",
               "isHook": false,
               "skipped": false
             },
@@ -508,11 +508,11 @@
               "code": "assert.deepEqual(compact([0, 1, false, 2, '', 3]), [1, 2, 3]);",
               "err": {
                 "message": "AssertionError: Expected values to be loosely deep-equal:\n\n[\n  2,\n  3,\n  '-1': 1\n]\n\nshould loosely deep-equal\n\n[\n  1,\n  2,\n  3\n]",
-                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n[\n  2,\n  3,\n  '-1': 1\n]\n\nshould loosely deep-equal\n\n[\n  1,\n  2,\n  3\n]\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/compact.test.js:12:16)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n[\n  2,\n  3,\n  '-1': 1\n]\n\nshould loosely deep-equal\n\n[\n  1,\n  2,\n  3\n]\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/compact.test.js:12:16)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": " [\n+   1\n   2\n   3\n ]\n"
               },
-              "uuid": "6be86a78-2396-4cd0-98a7-d49a26177001",
-              "parentUUID": "e19baac5-bd10-462e-b119-6ef5a60b2f30",
+              "uuid": "f98c17b0-e840-4786-a2ea-3686c437503f",
+              "parentUUID": "eacb93d7-62d4-46e4-8823-a983b9077a6d",
               "isHook": false,
               "skipped": false
             },
@@ -529,20 +529,20 @@
               "context": null,
               "code": "assert.deepEqual(compact([\"\",0,'',false]),[])",
               "err": {},
-              "uuid": "9f335bda-823f-4033-9846-8930085aed4b",
-              "parentUUID": "e19baac5-bd10-462e-b119-6ef5a60b2f30",
+              "uuid": "9053fae0-ccb5-49b6-b746-f9e76f265230",
+              "parentUUID": "eacb93d7-62d4-46e4-8823-a983b9077a6d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e688af60-a2bd-445e-80d4-5db27f2d7177",
-            "9f335bda-823f-4033-9846-8930085aed4b"
+            "ce5b3ade-619d-4c7a-ae55-f1a2ee71c6cd",
+            "9053fae0-ccb5-49b6-b746-f9e76f265230"
           ],
           "failures": [
-            "b7a198b4-e87f-46b2-8376-d11ee01c895b",
-            "6be86a78-2396-4cd0-98a7-d49a26177001"
+            "b5c91461-5f3d-446a-b305-642d6ae95c56",
+            "f98c17b0-e840-4786-a2ea-3686c437503f"
           ],
           "pending": [],
           "skipped": [],
@@ -552,9 +552,9 @@
           "_timeout": 2000
         },
         {
-          "uuid": "f6f0ac9e-c286-4142-ac86-68b1507914c2",
+          "uuid": "1d480911-a2cd-4ddb-a08b-c78d40c731a5",
           "title": "the countBy function",
-          "fullFile": "C:\\Users\\609\\Documents\\Testing\\software-testing\\test\\CountBy.test.js",
+          "fullFile": "F:\\Software_testing_course\\software-testing\\test\\CountBy.test.js",
           "file": "\\test\\CountBy.test.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -563,7 +563,7 @@
               "title": "should return a map of true and false where the value for true is 1 and false is 0",
               "fullTitle": "the countBy function should return a map of true and false where the value for true is 1 and false is 0",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -573,11 +573,11 @@
               "code": "assert.deepEqual(countBy(user, value => value.active),{ 'true': 1})",
               "err": {
                 "message": "AssertionError: Expected values to be loosely deep-equal:\n\n{\n  true: 0\n}\n\nshould loosely deep-equal\n\n{\n  true: 1\n}",
-                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n{\n  true: 0\n}\n\nshould loosely deep-equal\n\n{\n  true: 1\n}\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/CountBy.test.js:27:16)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n{\n  true: 0\n}\n\nshould loosely deep-equal\n\n{\n  true: 1\n}\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/CountBy.test.js:39:16)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": " {\n-   \"true\": 0\n+   \"true\": 1\n }\n"
               },
-              "uuid": "005ff338-e0ec-42ed-8391-a25f46dbeb14",
-              "parentUUID": "f6f0ac9e-c286-4142-ac86-68b1507914c2",
+              "uuid": "27480295-309f-43d6-aa46-93ba3a40d307",
+              "parentUUID": "1d480911-a2cd-4ddb-a08b-c78d40c731a5",
               "isHook": false,
               "skipped": false
             },
@@ -585,7 +585,7 @@
               "title": "should return a map of true and false where the value for true is 2 and false is 1",
               "fullTitle": "the countBy function should return a map of true and false where the value for true is 2 and false is 1",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -595,11 +595,11 @@
               "code": "assert.deepEqual(countBy(users, value => value.active),{ 'true': 2, 'false': 1 })",
               "err": {
                 "message": "AssertionError: Expected values to be loosely deep-equal:\n\n{\n  false: 0,\n  true: 1\n}\n\nshould loosely deep-equal\n\n{\n  false: 1,\n  true: 2\n}",
-                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n{\n  false: 0,\n  true: 1\n}\n\nshould loosely deep-equal\n\n{\n  false: 1,\n  true: 2\n}\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/CountBy.test.js:30:16)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n{\n  false: 0,\n  true: 1\n}\n\nshould loosely deep-equal\n\n{\n  false: 1,\n  true: 2\n}\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/CountBy.test.js:42:16)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": " {\n-   \"false\": 0\n-   \"true\": 1\n+   \"false\": 1\n+   \"true\": 2\n }\n"
               },
-              "uuid": "bc03be0c-44dc-4b15-8c66-82e9e4bb341c",
-              "parentUUID": "f6f0ac9e-c286-4142-ac86-68b1507914c2",
+              "uuid": "bfce7597-92d9-4cc4-9376-abbe3043715d",
+              "parentUUID": "1d480911-a2cd-4ddb-a08b-c78d40c731a5",
               "isHook": false,
               "skipped": false
             },
@@ -617,11 +617,11 @@
               "code": "assert.deepEqual(countBy(mobility,value => value.type),{'motorcycle':1,'car':1,'bike':1,'skateboard':1})",
               "err": {
                 "message": "AssertionError: Expected values to be loosely deep-equal:\n\n{\n  bike: 0,\n  car: 0,\n  motorcycle: 0,\n  skateboard: 0\n}\n\nshould loosely deep-equal\n\n{\n  bike: 1,\n  car: 1,\n  motorcycle: 1,\n  skateboard: 1\n}",
-                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n{\n  bike: 0,\n  car: 0,\n  motorcycle: 0,\n  skateboard: 0\n}\n\nshould loosely deep-equal\n\n{\n  bike: 1,\n  car: 1,\n  motorcycle: 1,\n  skateboard: 1\n}\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/CountBy.test.js:33:16)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n{\n  bike: 0,\n  car: 0,\n  motorcycle: 0,\n  skateboard: 0\n}\n\nshould loosely deep-equal\n\n{\n  bike: 1,\n  car: 1,\n  motorcycle: 1,\n  skateboard: 1\n}\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/CountBy.test.js:45:16)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": " {\n-   \"bike\": 0\n-   \"car\": 0\n-   \"motorcycle\": 0\n-   \"skateboard\": 0\n+   \"bike\": 1\n+   \"car\": 1\n+   \"motorcycle\": 1\n+   \"skateboard\": 1\n }\n"
               },
-              "uuid": "5504451f-897e-4a91-9a4b-4f1bd73fb6db",
-              "parentUUID": "f6f0ac9e-c286-4142-ac86-68b1507914c2",
+              "uuid": "389331f2-dfd6-4c00-a89e-d3b976c85d64",
+              "parentUUID": "1d480911-a2cd-4ddb-a08b-c78d40c731a5",
               "isHook": false,
               "skipped": false
             },
@@ -639,11 +639,11 @@
               "code": "assert.deepEqual(countBy(mobility,value => value.no),{'undefined':4})",
               "err": {
                 "message": "AssertionError: Expected values to be loosely deep-equal:\n\n{\n  undefined: 3\n}\n\nshould loosely deep-equal\n\n{\n  undefined: 4\n}",
-                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n{\n  undefined: 3\n}\n\nshould loosely deep-equal\n\n{\n  undefined: 4\n}\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/CountBy.test.js:36:16)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n{\n  undefined: 3\n}\n\nshould loosely deep-equal\n\n{\n  undefined: 4\n}\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/CountBy.test.js:48:16)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": " {\n-   \"undefined\": 3\n+   \"undefined\": 4\n }\n"
               },
-              "uuid": "8aeedea0-e60c-46a6-b8d5-dd947f31f6cd",
-              "parentUUID": "f6f0ac9e-c286-4142-ac86-68b1507914c2",
+              "uuid": "737cae46-0c03-4a8b-bd78-4543100001e8",
+              "parentUUID": "1d480911-a2cd-4ddb-a08b-c78d40c731a5",
               "isHook": false,
               "skipped": false
             },
@@ -651,7 +651,7 @@
               "title": "should return a map of car that has value 3",
               "fullTitle": "the countBy function should return a map of car that has value 3",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -661,35 +661,120 @@
               "code": "assert.deepEqual(countBy(cars,value => value.type),{'car':3})",
               "err": {
                 "message": "AssertionError: Expected values to be loosely deep-equal:\n\n{\n  car: 2\n}\n\nshould loosely deep-equal\n\n{\n  car: 3\n}",
-                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n{\n  car: 2\n}\n\nshould loosely deep-equal\n\n{\n  car: 3\n}\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/CountBy.test.js:39:16)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n{\n  car: 2\n}\n\nshould loosely deep-equal\n\n{\n  car: 3\n}\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/CountBy.test.js:51:16)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": " {\n-   \"car\": 2\n+   \"car\": 3\n }\n"
               },
-              "uuid": "496770d6-a863-4959-9362-060874844ebb",
-              "parentUUID": "f6f0ac9e-c286-4142-ac86-68b1507914c2",
+              "uuid": "e5fe56cd-7404-4b31-bf76-b2955dabdfac",
+              "parentUUID": "1d480911-a2cd-4ddb-a08b-c78d40c731a5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return a map of the that has value 1",
+              "fullTitle": "the countBy function should return a map of the that has value 1",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "assert.deepEqual(countBy(weird,value => value.what),{'the':1})",
+              "err": {
+                "message": "AssertionError: Expected values to be loosely deep-equal:\n\n{\n  no: 0,\n  the: 0,\n  undefined: 0\n}\n\nshould loosely deep-equal\n\n{\n  the: 1\n}",
+                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n{\n  no: 0,\n  the: 0,\n  undefined: 0\n}\n\nshould loosely deep-equal\n\n{\n  the: 1\n}\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/CountBy.test.js:54:16)\n    at processImmediate (node:internal/timers:466:21)",
+                "diff": " {\n-   \"no\": 0\n-   \"the\": 0\n-   \"undefined\": 0\n+   \"the\": 1\n }\n"
+              },
+              "uuid": "2df94ba1-ac8f-4b5f-a524-09969d40ec1f",
+              "parentUUID": "1d480911-a2cd-4ddb-a08b-c78d40c731a5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return a map of {undefined:1,null:1,0:1} that have value 1",
+              "fullTitle": "the countBy function should return a map of {undefined:1,null:1,0:1} that have value 1",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "assert.deepEqual(countBy(weird,value => value.type),{undefined:1,null:1,0:1})",
+              "err": {
+                "message": "AssertionError: Expected values to be loosely deep-equal:\n\n{\n  '0': 0,\n  null: 0,\n  undefined: 0\n}\n\nshould loosely deep-equal\n\n{\n  '0': 1,\n  null: 1,\n  undefined: 1\n}",
+                "estack": "AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:\n\n{\n  '0': 0,\n  null: 0,\n  undefined: 0\n}\n\nshould loosely deep-equal\n\n{\n  '0': 1,\n  null: 1,\n  undefined: 1\n}\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/CountBy.test.js:57:16)\n    at processImmediate (node:internal/timers:466:21)",
+                "diff": " {\n-   \"0\": 0\n-   \"null\": 0\n-   \"undefined\": 0\n+   \"0\": 1\n+   \"null\": 1\n+   \"undefined\": 1\n }\n"
+              },
+              "uuid": "4c58d1e0-79f5-4fc1-9fad-629aa916f247",
+              "parentUUID": "1d480911-a2cd-4ddb-a08b-c78d40c731a5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return a map of {undefined:0,0:0} that have value 1",
+              "fullTitle": "the countBy function should return a map of {undefined:0,0:0} that have value 1",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "assert.deepEqual(countBy(zero,value => value.undefined),{undefined:0,0:0})",
+              "err": {},
+              "uuid": "8f17f03e-9bcd-4506-a660-c2d0e2724133",
+              "parentUUID": "1d480911-a2cd-4ddb-a08b-c78d40c731a5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return {} when given an empty array and a value that doesn't exist in the variable",
+              "fullTitle": "the countBy function should return {} when given an empty array and a value that doesn't exist in the variable",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "assert.deepEqual(countBy(empty,value => value.type),{})",
+              "err": {},
+              "uuid": "e32dd0a5-ee45-4c63-a78a-44f655ee6e86",
+              "parentUUID": "1d480911-a2cd-4ddb-a08b-c78d40c731a5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
+          "passes": [
+            "8f17f03e-9bcd-4506-a660-c2d0e2724133",
+            "e32dd0a5-ee45-4c63-a78a-44f655ee6e86"
+          ],
           "failures": [
-            "005ff338-e0ec-42ed-8391-a25f46dbeb14",
-            "bc03be0c-44dc-4b15-8c66-82e9e4bb341c",
-            "5504451f-897e-4a91-9a4b-4f1bd73fb6db",
-            "8aeedea0-e60c-46a6-b8d5-dd947f31f6cd",
-            "496770d6-a863-4959-9362-060874844ebb"
+            "27480295-309f-43d6-aa46-93ba3a40d307",
+            "bfce7597-92d9-4cc4-9376-abbe3043715d",
+            "389331f2-dfd6-4c00-a89e-d3b976c85d64",
+            "737cae46-0c03-4a8b-bd78-4543100001e8",
+            "e5fe56cd-7404-4b31-bf76-b2955dabdfac",
+            "2df94ba1-ac8f-4b5f-a524-09969d40ec1f",
+            "4c58d1e0-79f5-4fc1-9fad-629aa916f247"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 3,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "f872a643-6162-401c-8fb5-2b07b0aa1c97",
+          "uuid": "9ff1b66b-3f4d-448c-9c68-d58f2e78472f",
           "title": "the defaulToAny function",
-          "fullFile": "C:\\Users\\609\\Documents\\Testing\\software-testing\\test\\defaultToAny.test.js",
+          "fullFile": "F:\\Software_testing_course\\software-testing\\test\\defaultToAny.test.js",
           "file": "\\test\\defaultToAny.test.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -707,8 +792,8 @@
               "context": null,
               "code": "assert.equal(defaulToAny(1,10,20),1)",
               "err": {},
-              "uuid": "f7d49626-7035-4167-b779-d1b852c3f2da",
-              "parentUUID": "f872a643-6162-401c-8fb5-2b07b0aa1c97",
+              "uuid": "4cf840de-14f8-4d51-92ec-751d62b692c3",
+              "parentUUID": "9ff1b66b-3f4d-448c-9c68-d58f2e78472f",
               "isHook": false,
               "skipped": false
             },
@@ -725,8 +810,8 @@
               "context": null,
               "code": "assert.equal(defaulToAny(undefined, 10, 20),10)",
               "err": {},
-              "uuid": "28336959-06f2-4918-b2ff-9999bc2668d7",
-              "parentUUID": "f872a643-6162-401c-8fb5-2b07b0aa1c97",
+              "uuid": "7d9a40b6-c2a8-4a90-a320-406ca589d1f8",
+              "parentUUID": "9ff1b66b-3f4d-448c-9c68-d58f2e78472f",
               "isHook": false,
               "skipped": false
             },
@@ -743,8 +828,8 @@
               "context": null,
               "code": "assert.equal(defaulToAny(undefined, null, 20),20)",
               "err": {},
-              "uuid": "c84dee75-af1b-48db-b74e-8e98017423ca",
-              "parentUUID": "f872a643-6162-401c-8fb5-2b07b0aa1c97",
+              "uuid": "66747874-f646-4bc3-9e6e-2cfd56d5ef4c",
+              "parentUUID": "9ff1b66b-3f4d-448c-9c68-d58f2e78472f",
               "isHook": false,
               "skipped": false
             },
@@ -761,8 +846,8 @@
               "context": null,
               "code": "assert.equal(defaulToAny(undefined, null, NaN),NaN)",
               "err": {},
-              "uuid": "035f56e3-c48a-4ac5-bc03-7259f853c278",
-              "parentUUID": "f872a643-6162-401c-8fb5-2b07b0aa1c97",
+              "uuid": "53584b0e-508e-444a-b564-bd23dcb303fb",
+              "parentUUID": "9ff1b66b-3f4d-448c-9c68-d58f2e78472f",
               "isHook": false,
               "skipped": false
             },
@@ -779,19 +864,19 @@
               "context": null,
               "code": "assert.equal(defaulToAny(1,10,undefined,20),1)",
               "err": {},
-              "uuid": "928e86d3-2837-41ce-bdf0-afd38c9b86b6",
-              "parentUUID": "f872a643-6162-401c-8fb5-2b07b0aa1c97",
+              "uuid": "0aeb798b-a73b-46b2-9bcf-35526cd43388",
+              "parentUUID": "9ff1b66b-3f4d-448c-9c68-d58f2e78472f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f7d49626-7035-4167-b779-d1b852c3f2da",
-            "28336959-06f2-4918-b2ff-9999bc2668d7",
-            "c84dee75-af1b-48db-b74e-8e98017423ca",
-            "035f56e3-c48a-4ac5-bc03-7259f853c278",
-            "928e86d3-2837-41ce-bdf0-afd38c9b86b6"
+            "4cf840de-14f8-4d51-92ec-751d62b692c3",
+            "7d9a40b6-c2a8-4a90-a320-406ca589d1f8",
+            "66747874-f646-4bc3-9e6e-2cfd56d5ef4c",
+            "53584b0e-508e-444a-b564-bd23dcb303fb",
+            "0aeb798b-a73b-46b2-9bcf-35526cd43388"
           ],
           "failures": [],
           "pending": [],
@@ -802,9 +887,9 @@
           "_timeout": 2000
         },
         {
-          "uuid": "41e89486-ad22-41b2-9011-f76d155673c0",
+          "uuid": "c93417e1-7f65-49cf-b321-86e60a8aae2b",
           "title": "EveryTest",
-          "fullFile": "C:\\Users\\609\\Documents\\Testing\\software-testing\\test\\every.test.js",
+          "fullFile": "F:\\Software_testing_course\\software-testing\\test\\every.test.js",
           "file": "\\test\\every.test.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -822,8 +907,8 @@
               "context": null,
               "code": "var result = every([true, 1, null, 'yes'], Boolean)\nassert.equal(result, false);",
               "err": {},
-              "uuid": "95cfe17f-d05c-42eb-8b4b-616eeb10ba73",
-              "parentUUID": "41e89486-ad22-41b2-9011-f76d155673c0",
+              "uuid": "85dc56a7-17a6-455e-aa2c-66feb2708f3f",
+              "parentUUID": "c93417e1-7f65-49cf-b321-86e60a8aae2b",
               "isHook": false,
               "skipped": false
             },
@@ -831,7 +916,7 @@
               "title": "Should return true when empty array",
               "fullTitle": "EveryTest Should return true when empty array",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -840,8 +925,8 @@
               "context": null,
               "code": "var result = every([], Boolean)\nassert.equal(result, true);",
               "err": {},
-              "uuid": "dba27d08-e406-4198-a676-00adf06ccf8f",
-              "parentUUID": "41e89486-ad22-41b2-9011-f76d155673c0",
+              "uuid": "62d34e14-436e-4053-a15e-c2438ef2f632",
+              "parentUUID": "c93417e1-7f65-49cf-b321-86e60a8aae2b",
               "isHook": false,
               "skipped": false
             },
@@ -858,8 +943,8 @@
               "context": null,
               "code": "var result = every([true, false, true, true], Boolean)\nassert.equal(result, false);",
               "err": {},
-              "uuid": "b6d091be-8a57-4290-9b82-5e8646b2bfae",
-              "parentUUID": "41e89486-ad22-41b2-9011-f76d155673c0",
+              "uuid": "84a0c82d-6679-4c0d-95f6-9783ff1c2319",
+              "parentUUID": "c93417e1-7f65-49cf-b321-86e60a8aae2b",
               "isHook": false,
               "skipped": false
             },
@@ -876,8 +961,8 @@
               "context": null,
               "code": "var result = every([true, 1, true, true], Boolean)\nassert.equal(result, true);",
               "err": {},
-              "uuid": "5ee94ee0-78c9-4ed1-9070-c6d653b49e65",
-              "parentUUID": "41e89486-ad22-41b2-9011-f76d155673c0",
+              "uuid": "edf5b8b6-d8ac-4519-853d-c3c589fa7381",
+              "parentUUID": "c93417e1-7f65-49cf-b321-86e60a8aae2b",
               "isHook": false,
               "skipped": false
             },
@@ -894,8 +979,8 @@
               "context": null,
               "code": "var result = every([null, 0, '',], Boolean)\nassert.equal(result, false);",
               "err": {},
-              "uuid": "73ea75e6-1515-47d4-b0b8-6fa188b3b58a",
-              "parentUUID": "41e89486-ad22-41b2-9011-f76d155673c0",
+              "uuid": "3683f172-af38-460a-b0f2-f51421a26bcc",
+              "parentUUID": "c93417e1-7f65-49cf-b321-86e60a8aae2b",
               "isHook": false,
               "skipped": false
             },
@@ -912,8 +997,8 @@
               "context": null,
               "code": "var result = every([''], Boolean)\nassert.equal(result, false);",
               "err": {},
-              "uuid": "61178241-1684-4f18-92ed-ba71c0fb43a5",
-              "parentUUID": "41e89486-ad22-41b2-9011-f76d155673c0",
+              "uuid": "12152eea-51ad-4456-9e76-79a3df787544",
+              "parentUUID": "c93417e1-7f65-49cf-b321-86e60a8aae2b",
               "isHook": false,
               "skipped": false
             },
@@ -930,8 +1015,8 @@
               "context": null,
               "code": "var result = every([0], Boolean)\nassert.equal(result, false);",
               "err": {},
-              "uuid": "01507fc4-3737-4731-8715-33b1ffae4cbc",
-              "parentUUID": "41e89486-ad22-41b2-9011-f76d155673c0",
+              "uuid": "f0be3ccb-a755-4e3b-8524-7e7d65238d8e",
+              "parentUUID": "c93417e1-7f65-49cf-b321-86e60a8aae2b",
               "isHook": false,
               "skipped": false
             },
@@ -948,8 +1033,8 @@
               "context": null,
               "code": "var result = every(['0'], Boolean)\nassert.equal(result, true);",
               "err": {},
-              "uuid": "27394d0f-dbe0-4117-93ca-325fc5f4b0ab",
-              "parentUUID": "41e89486-ad22-41b2-9011-f76d155673c0",
+              "uuid": "126b0192-cce2-4bc2-ade5-a5bdde5d765d",
+              "parentUUID": "c93417e1-7f65-49cf-b321-86e60a8aae2b",
               "isHook": false,
               "skipped": false
             },
@@ -966,8 +1051,8 @@
               "context": null,
               "code": "var result = every([1,'3453','dfglkhgf'], Number)\nassert.equal(result, false);",
               "err": {},
-              "uuid": "b8dd1216-c295-4e8e-8fcb-504a1743b942",
-              "parentUUID": "41e89486-ad22-41b2-9011-f76d155673c0",
+              "uuid": "8d34f0cb-eb9d-4caf-ba3c-25b305b68242",
+              "parentUUID": "c93417e1-7f65-49cf-b321-86e60a8aae2b",
               "isHook": false,
               "skipped": false
             },
@@ -984,37 +1069,37 @@
               "context": null,
               "code": "var result = every([true, 'two', 1, '1', false, 0], String)\nassert.equal(result, true);",
               "err": {},
-              "uuid": "83c207ba-ecda-4d98-931d-b80be3dcca17",
-              "parentUUID": "41e89486-ad22-41b2-9011-f76d155673c0",
+              "uuid": "c252b37d-38b9-46a6-883b-ad3ef22d1efb",
+              "parentUUID": "c93417e1-7f65-49cf-b321-86e60a8aae2b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "95cfe17f-d05c-42eb-8b4b-616eeb10ba73",
-            "dba27d08-e406-4198-a676-00adf06ccf8f",
-            "b6d091be-8a57-4290-9b82-5e8646b2bfae",
-            "5ee94ee0-78c9-4ed1-9070-c6d653b49e65",
-            "73ea75e6-1515-47d4-b0b8-6fa188b3b58a",
-            "61178241-1684-4f18-92ed-ba71c0fb43a5",
-            "01507fc4-3737-4731-8715-33b1ffae4cbc",
-            "27394d0f-dbe0-4117-93ca-325fc5f4b0ab",
-            "b8dd1216-c295-4e8e-8fcb-504a1743b942",
-            "83c207ba-ecda-4d98-931d-b80be3dcca17"
+            "85dc56a7-17a6-455e-aa2c-66feb2708f3f",
+            "62d34e14-436e-4053-a15e-c2438ef2f632",
+            "84a0c82d-6679-4c0d-95f6-9783ff1c2319",
+            "edf5b8b6-d8ac-4519-853d-c3c589fa7381",
+            "3683f172-af38-460a-b0f2-f51421a26bcc",
+            "12152eea-51ad-4456-9e76-79a3df787544",
+            "f0be3ccb-a755-4e3b-8524-7e7d65238d8e",
+            "126b0192-cce2-4bc2-ade5-a5bdde5d765d",
+            "8d34f0cb-eb9d-4caf-ba3c-25b305b68242",
+            "c252b37d-38b9-46a6-883b-ad3ef22d1efb"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1,
+          "duration": 0,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "7157bbf9-ceba-4af5-a67d-385394cb8ed9",
+          "uuid": "567dec75-dfa3-4fbf-8043-9e74fc75cafd",
           "title": "the get function",
-          "fullFile": "C:\\Users\\609\\Documents\\Testing\\software-testing\\test\\get.test.js",
+          "fullFile": "F:\\Software_testing_course\\software-testing\\test\\get.test.js",
           "file": "\\test\\get.test.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -1023,7 +1108,7 @@
               "title": "should return 3 which is the value of given path which is represented in string form",
               "fullTitle": "the get function should return 3 which is the value of given path which is represented in string form",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -1032,8 +1117,8 @@
               "context": null,
               "code": "assert.equal(get(object, 'a[0].b.c'),3)",
               "err": {},
-              "uuid": "62544810-e069-4417-bf5c-17fbadc8412c",
-              "parentUUID": "7157bbf9-ceba-4af5-a67d-385394cb8ed9",
+              "uuid": "90f14579-d574-42ba-80c8-aacf1486fda8",
+              "parentUUID": "567dec75-dfa3-4fbf-8043-9e74fc75cafd",
               "isHook": false,
               "skipped": false
             },
@@ -1050,8 +1135,26 @@
               "context": null,
               "code": "assert.equal(get(object, ['a', '0', 'b', 'c']),3)",
               "err": {},
-              "uuid": "622b3ff1-04fb-43e6-9d05-1e020423d881",
-              "parentUUID": "7157bbf9-ceba-4af5-a67d-385394cb8ed9",
+              "uuid": "c0c9b23f-a055-406e-af8b-fd093e4f85d9",
+              "parentUUID": "567dec75-dfa3-4fbf-8043-9e74fc75cafd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return 3 which is the value of the given which is represented in array form even when given a defaultValue parameter",
+              "fullTitle": "the get function should return 3 which is the value of the given which is represented in array form even when given a defaultValue parameter",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "assert.equal(get(object, ['a', '0', 'b', 'c'],'default'),3)",
+              "err": {},
+              "uuid": "ad30331c-b852-4af3-be17-1b64007cdc51",
+              "parentUUID": "567dec75-dfa3-4fbf-8043-9e74fc75cafd",
               "isHook": false,
               "skipped": false
             },
@@ -1068,8 +1171,8 @@
               "context": null,
               "code": "assert.equal(get(object2,'a[1]','default'),'default')",
               "err": {},
-              "uuid": "8243276e-45b0-4c6f-b34f-b6d927014942",
-              "parentUUID": "7157bbf9-ceba-4af5-a67d-385394cb8ed9",
+              "uuid": "2739d192-552c-4255-9c5b-0eecbf00b066",
+              "parentUUID": "567dec75-dfa3-4fbf-8043-9e74fc75cafd",
               "isHook": false,
               "skipped": false
             },
@@ -1084,33 +1187,34 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "assert.equal(get(object3,'[0]','default'),'default')",
+              "code": "assert.equal(get(object3,'\"a\"','default'),'default')",
               "err": {},
-              "uuid": "3461d5ec-f1ca-4752-9ca3-8fca198e7e57",
-              "parentUUID": "7157bbf9-ceba-4af5-a67d-385394cb8ed9",
+              "uuid": "221025bd-fa58-4e50-a896-7f7a99492c46",
+              "parentUUID": "567dec75-dfa3-4fbf-8043-9e74fc75cafd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "62544810-e069-4417-bf5c-17fbadc8412c",
-            "622b3ff1-04fb-43e6-9d05-1e020423d881",
-            "8243276e-45b0-4c6f-b34f-b6d927014942",
-            "3461d5ec-f1ca-4752-9ca3-8fca198e7e57"
+            "90f14579-d574-42ba-80c8-aacf1486fda8",
+            "c0c9b23f-a055-406e-af8b-fd093e4f85d9",
+            "ad30331c-b852-4af3-be17-1b64007cdc51",
+            "2739d192-552c-4255-9c5b-0eecbf00b066",
+            "221025bd-fa58-4e50-a896-7f7a99492c46"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "2b54aa5e-c293-4c90-87bc-9aeb0d252b53",
+          "uuid": "f0fca153-8a15-4911-a152-18ce36f36ec8",
           "title": "the memoize function",
-          "fullFile": "C:\\Users\\609\\Documents\\Testing\\software-testing\\test\\memoize.test.js",
+          "fullFile": "F:\\Software_testing_course\\software-testing\\test\\memoize.test.js",
           "file": "\\test\\memoize.test.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -1129,11 +1233,11 @@
               "code": "const values = memoize(values)\nassert.deepEqual(values(object),[1,2])",
               "err": {
                 "message": "ReferenceError: Cannot access 'values' before initialization",
-                "estack": "ReferenceError: Cannot access 'values' before initialization\n    at Context.<anonymous> (file:///C:/Users/609/Documents/Testing/software-testing/test/memoize.test.js:5:32)\n    at processImmediate (internal/timers.js:461:21)",
+                "estack": "ReferenceError: Cannot access 'values' before initialization\n    at Context.<anonymous> (file:///F:/Software_testing_course/software-testing/test/memoize.test.js:5:32)\n    at processImmediate (node:internal/timers:466:21)",
                 "diff": null
               },
-              "uuid": "3087ebb7-3465-4239-83bf-a0f60fd2cf88",
-              "parentUUID": "2b54aa5e-c293-4c90-87bc-9aeb0d252b53",
+              "uuid": "e4e27482-2c43-4c7c-a46c-bfaf3fdc41ac",
+              "parentUUID": "f0fca153-8a15-4911-a152-18ce36f36ec8",
               "isHook": false,
               "skipped": false
             }
@@ -1141,7 +1245,7 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "3087ebb7-3465-4239-83bf-a0f60fd2cf88"
+            "e4e27482-2c43-4c7c-a46c-bfaf3fdc41ac"
           ],
           "pending": [],
           "skipped": [],
@@ -1151,9 +1255,9 @@
           "_timeout": 2000
         },
         {
-          "uuid": "3f87c35e-c713-448f-9173-dfd199a83d3b",
+          "uuid": "d75e9a4c-5a45-4f25-b1d4-d389f0590a15",
           "title": "the reduce function",
-          "fullFile": "C:\\Users\\609\\Documents\\Testing\\software-testing\\test\\reduce.test.js",
+          "fullFile": "F:\\Software_testing_course\\software-testing\\test\\reduce.test.js",
           "file": "\\test\\reduce.test.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -1171,8 +1275,44 @@
               "context": null,
               "code": "assert.equal(reduce([1, 2], (sum, n) => sum + n, 0),3)",
               "err": {},
-              "uuid": "034bba31-05e7-4f5c-b326-bf022f67bcfd",
-              "parentUUID": "3f87c35e-c713-448f-9173-dfd199a83d3b",
+              "uuid": "fe7ddd5b-be2a-467c-8bc0-ba752d98a66b",
+              "parentUUID": "d75e9a4c-5a45-4f25-b1d4-d389f0590a15",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return 3 when given an array of [1,2] and summed up even when start value parameter is not provided",
+              "fullTitle": "the reduce function should return 3 when given an array of [1,2] and summed up even when start value parameter is not provided",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "assert.equal(reduce([1, 2], (sum, n) => sum + n),3)",
+              "err": {},
+              "uuid": "c95fe893-1e0a-41af-aa17-a1a7a9163df2",
+              "parentUUID": "d75e9a4c-5a45-4f25-b1d4-d389f0590a15",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return 3 when given an array of [1,2] and summed up even when start value parameter is not provided",
+              "fullTitle": "the reduce function should return 3 when given an array of [1,2] and summed up even when start value parameter is not provided",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "assert.equal(reduce([1, 2,4,-1,null], (sum, n) => sum + n),6)",
+              "err": {},
+              "uuid": "601f85c4-2162-434f-bb58-ef30e485e05a",
+              "parentUUID": "d75e9a4c-5a45-4f25-b1d4-d389f0590a15",
               "isHook": false,
               "skipped": false
             },
@@ -1189,21 +1329,42 @@
               "context": null,
               "code": "assert.deepEqual(reduce({ 'a': 1, 'b': 2, 'c': 1 }, (result, value, key) => {\n       (result[value] || (result[value] = [])).push(key)\n       return result\n        }, {}),{ '1': ['a', 'c'], '2': ['b'] })",
               "err": {},
-              "uuid": "f418733b-db6c-429a-98f7-be7e81520e73",
-              "parentUUID": "3f87c35e-c713-448f-9173-dfd199a83d3b",
+              "uuid": "dbf13d73-580a-44a9-a7b5-bab939d5ca34",
+              "parentUUID": "d75e9a4c-5a45-4f25-b1d4-d389f0590a15",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return the sum of values of the map",
+              "fullTitle": "the reduce function should return the sum of values of the map",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "assert.deepEqual(reduce({ 'a': 1, 'b': 2, 'c': 1 }, (result, value, key) => result+value, 0),4)",
+              "err": {},
+              "uuid": "c63d7b80-6aeb-43f8-882e-e2af989adacf",
+              "parentUUID": "d75e9a4c-5a45-4f25-b1d4-d389f0590a15",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "034bba31-05e7-4f5c-b326-bf022f67bcfd",
-            "f418733b-db6c-429a-98f7-be7e81520e73"
+            "fe7ddd5b-be2a-467c-8bc0-ba752d98a66b",
+            "c95fe893-1e0a-41af-aa17-a1a7a9163df2",
+            "601f85c4-2162-434f-bb58-ef30e485e05a",
+            "dbf13d73-580a-44a9-a7b5-bab939d5ca34",
+            "c63d7b80-6aeb-43f8-882e-e2af989adacf"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
